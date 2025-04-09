@@ -17,7 +17,16 @@ export default function TabLayout() {
             <Ionicons name={focused ? 'home' : 'home-outline'} color={color} size={24} />
           ),
         }}
-      />
+      />,
+      {/* <Tabs.Screen
+        name="index"
+        options={{
+          title: 'Home',
+          tabBarIcon: ({ color, focused }:{color: string; focused:boolean}) => (
+            <Ionicons name={focused ? 'home' : 'home-outline'} color={color} size={24} />
+          ),
+        }}
+      /> */}
     </Tabs>
   );
 }
